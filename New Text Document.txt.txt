@@ -1,2 +1,6 @@
+<<<<<<< .mine
 hjgdffjkblnfmn vvho
-mncvfeejnbgvysw
+=======
+hjgdffjkblnfmn vvho
+>>>>>>> .theirs
+mncvfeejnbgvyswnvcvxfvmmnbvtmh

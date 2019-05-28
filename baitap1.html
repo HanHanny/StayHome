@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+  <title>Bai tap bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+        }
+        
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 1100px}
+        
+        /* Set gray background color and 100% height */
+        .sidenav {
+          padding-top: 20px;
+          background-color: #f1f1f1;
+          height: 100%;
+        }
+        .carousel-caption h3 {
+          color: rgb(8, 0, 0) !important;
+          }
+            @media (max-width: 300px) {
+        .carousel-caption {
+           display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+        /* Set black background color, white text and some padding */
+        footer {
+          background-color: #555;
+          color: white;
+          padding: 15px;
+          width: 100%
+        }
+        
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+          .sidenav {
+            height: auto;
+            padding: 15px;
+          }
+          .row.content {height:auto;} 
+        }
+        #section3 {padding-top:50px;height:200px;color: #fff; background-color: #ff9800;}
+        #section41 {padding-top:50px;height:200px;color: #fff; background-color: #00bcd4;}
+        #section42 {padding-top:50px;height:200px;color: #fff; background-color: #009688;}
+      </style>
+    </head>
+    <body>
+
+
+    <!--Phần đầu -->
+        <div class="jumbotron text-center" >
+            <img src="hinh1.jpg" width="100%" >
+            <div class="carousel-caption">
+                <h1>WELLCOME !!</h1>
+                <p>Resize this responsive page to see the effect!</p> 
+              </div> </div>
+<!--Phần bên trái-->
+<div class="container-fluid">    
+        <div class="row content">
+          <div class="col-sm-3 sidenav">
+                        <ul class="nav nav-pills nav-stacked">
+                          <li class="active"><a href="#section1">Home</a></li>
+                          <li><a href="#section2">Friends</a></li>
+                          <li><a href="#section3">Family</a></li>
+                          <li><a href="#section3">Photos</a></li>
+                        </ul><br>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search Blog..">
+                          <span class="input-group-btn">
+                          <button class="btn btn-default" type="button">
+                         <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+              </div>
+          </div>
+<!--Phần thân -->
+<div class="col-sm-9 text-left">
+         <div class="container-fluid">
+             <h2>TEST 0917</h2>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-floppy-disk"></span> Submit
+              </button>
+                          <!-- Modal -->
+             <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+        
+                         <!-- Modal content-->
+            <div class="modal-content">
+                 <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Save</h4>
+            </div>
+            <div class="modal-body">
+              <p>You want to save?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+              <button type="button" class="btn btn-success" onclick='refreshPage()'>
+                  <span class="glyphicon glyphicon-refresh"></span> Refresh
+              </button>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+                  <span class="glyphicon glyphicon-log-out"></span> Close
+              </button>
+                       <!-- Modal -->
+          <div class="modal fade" id="myModal1" role="dialog">
+                 <div class="modal-dialog">
+                       <!-- Modal content-->
+           <div class="modal-content">
+              <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">Close</h4>
+           </div>
+           <div class="modal-body">
+             <p>Are you sure Close the page?</p>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+             <button type="button" class="btn btn-danger"  onclick="self.close()">OK</button>
+           </div>
+         </div>
+       </div>
+     </div>
+             <script type="text/javascript">
+                 function refreshPage(){
+                  if(confirm("You already refresh the page?")){
+                     location.reload();
+                     }				
+                  }
+              </script>
+           </div> <br>
+        <did class="container-fluid">
+             <div class="jumbotron">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Hello world!!"> Click me
+                </button>
+        </did>
+        <br><br><a data-toggle="tooltip" data-placement="right" title="Nice to meet you">Title</a>
+        <br> <br><h1  class="text-left" >Welcome</h2>
+        <br><h2 class="text-center" >To</h2>
+        <br><h3  class="text-right" >Join us</h2>
+        </div>
+    </div>
+        <script>
+            $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+          });
+         </script>
+
+<!--phần table-->
+<div class="col-sm-9 text-left">
+        <div class="jumbotron">
+<div class="container">
+        <h2>Here are table !</h2>
+        <ul class="nav nav-tabs text-center">
+                <li class="active">
+                    <a  data-toggle="tab" href="#section3" >Table 1</a></li>
+                <li><a  data-toggle="tab" href="#section41">Table 2</a></li>
+                <li><a  data-toggle="tab" href="#section42">Table 3</a></li>
+              </ul>
+              <div class="tab-content text-center">
+                <div  id="section3" class="tab-pane fade in active" >
+                  <h3>Table 1</h3>
+                  <p>Welcome to Join us!</p>
+                </div>
+                <div  id="section41" class="tab-pane fade">
+                  <h3>Table 2</h3>
+                  <p>We are one team.</p>
+                </div>
+                <div  id="section42" class="tab-pane fade">
+                  <h3>Table 3</h3>
+                  <p>We learn from each other</p>
+                </div>
+              </div>
+            </div></div>
+           </div>
+         </div>
+
+    <!--Phần cuối-->
+    <footer class="container-fluid text-center" style="width: 100%">
+            <p>By Hân Hân </p>
+          </footer>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ql_banhangModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="chitietdathang">
+    <Key>
+      <PropertyRef Name="idhoadon" />
+      <PropertyRef Name="idhang" />
+    </Key>
+    <Property Name="idhoadon" Type="int" Nullable="false" />
+    <Property Name="idhang" Type="int" Nullable="false" />
+    <Property Name="giaban" Type="money" Nullable="false" />
+    <Property Name="soluong" Type="smallint" Nullable="false" />
+    <Property Name="mucgiamgia" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dondathang">
+    <Key>
+      <PropertyRef Name="idhoadon" />
+    </Key>
+    <Property Name="idhoadon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="makhachhang" Type="nvarchar" MaxLength="10" />
+    <Property Name="manhanvien" Type="nvarchar" MaxLength="10" />
+    <Property Name="ngaydathang" Type="smalldatetime" />
+    <Property Name="ngaygiaohang" Type="smalldatetime" />
+    <Property Name="ngaychuyenhang" Type="smalldatetime" />
+    <Property Name="noigiaohang" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="khachhang">
+    <Key>
+      <PropertyRef Name="idkhachhang" />
+    </Key>
+    <Property Name="idkhachhang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tencongty" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="tengiaodich" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="30" />
+    <Property Name="dienthoai" Type="nvarchar" MaxLength="15" />
+    <Property Name="fax" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="loaihang">
+    <Key>
+      <PropertyRef Name="idloaihang" />
+    </Key>
+    <Property Name="idloaihang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenloaihang" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mathang">
+    <Key>
+      <PropertyRef Name="idhang" />
+    </Key>
+    <Property Name="idhang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenhang" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="macongty" Type="nvarchar" MaxLength="10" />
+    <Property Name="maloaihang" Type="int" />
+    <Property Name="soluong" Type="int" />
+    <Property Name="donvitinh" Type="nvarchar" MaxLength="20" />
+    <Property Name="giahang" Type="money" />
+  </EntityType>
+  <EntityType Name="nhacungcap">
+    <Key>
+      <PropertyRef Name="idcongty" />
+    </Key>
+    <Property Name="idcongty" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tencongty" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="tengiaodich" Type="nvarchar" MaxLength="30" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="60" />
+    <Property Name="dienthoai" Type="nvarchar" MaxLength="20" />
+    <Property Name="fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="nhanvien">
+    <Key>
+      <PropertyRef Name="idnhanvien" />
+    </Key>
+    <Property Name="idnhanvien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ho" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ngaysinh" Type="datetime" />
+    <Property Name="ngaylamviec" Type="datetime" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="dienthoai" Type="nvarchar" MaxLength="15" />
+    <Property Name="luongcoban" Type="money" />
+    <Property Name="phucap" Type="money" />
+  </EntityType>
+  <Association Name="fk_chitiet_dondathang">
+    <End Role="dondathang" Type="Self.dondathang" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="chitietdathang" Type="Self.chitietdathang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dondathang">
+        <PropertyRef Name="idhoadon" />
+      </Principal>
+      <Dependent Role="chitietdathang">
+        <PropertyRef Name="idhoadon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_chitiet_mathang">
+    <End Role="mathang" Type="Self.mathang" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="chitietdathang" Type="Self.chitietdathang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mathang">
+        <PropertyRef Name="idhang" />
+      </Principal>
+      <Dependent Role="chitietdathang">
+        <PropertyRef Name="idhang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ql_banhangModelStoreContainer">
+    <EntitySet Name="chitietdathang" EntityType="Self.chitietdathang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dondathang" EntityType="Self.dondathang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="khachhang" EntityType="Self.khachhang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="loaihang" EntityType="Self.loaihang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mathang" EntityType="Self.mathang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhacungcap" EntityType="Self.nhacungcap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhanvien" EntityType="Self.nhanvien" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_chitiet_dondathang" Association="Self.fk_chitiet_dondathang">
+      <End Role="dondathang" EntitySet="dondathang" />
+      <End Role="chitietdathang" EntitySet="chitietdathang" />
+    </AssociationSet>
+    <AssociationSet Name="fk_chitiet_mathang" Association="Self.fk_chitiet_mathang">
+      <End Role="mathang" EntitySet="mathang" />
+      <End Role="chitietdathang" EntitySet="chitietdathang" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

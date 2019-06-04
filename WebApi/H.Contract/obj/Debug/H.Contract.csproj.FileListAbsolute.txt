@@ -1,0 +1,12 @@
+D:\WebApi\H.Contract\bin\Debug\H.Contract.dll
+D:\WebApi\H.Contract\bin\Debug\H.Contract.pdb
+D:\WebApi\H.Contract\bin\Debug\H.Model.dll
+D:\WebApi\H.Contract\bin\Debug\EntityFramework.dll
+D:\WebApi\H.Contract\bin\Debug\H.Model.pdb
+D:\WebApi\H.Contract\bin\Debug\H.Model.dll.config
+D:\WebApi\H.Contract\bin\Debug\EntityFramework.xml
+D:\WebApi\H.Contract\obj\Debug\H.Contract.csprojAssemblyReference.cache
+D:\WebApi\H.Contract\obj\Debug\H.Contract.csproj.CoreCompileInputs.cache
+D:\WebApi\H.Contract\obj\Debug\H.Contract.csproj.CopyComplete
+D:\WebApi\H.Contract\obj\Debug\H.Contract.dll
+D:\WebApi\H.Contract\obj\Debug\H.Contract.pdb

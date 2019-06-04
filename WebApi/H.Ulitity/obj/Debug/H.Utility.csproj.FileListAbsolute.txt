@@ -1,0 +1,9 @@
+D:\WebApi\H.Ulitity\bin\Debug\H.Ulitity.dll
+D:\WebApi\H.Ulitity\bin\Debug\H.Ulitity.pdb
+D:\WebApi\H.Ulitity\bin\Debug\Newtonsoft.Json.dll
+D:\WebApi\H.Ulitity\bin\Debug\Newtonsoft.Json.xml
+D:\WebApi\H.Ulitity\obj\Debug\H.Utility.csprojAssemblyReference.cache
+D:\WebApi\H.Ulitity\obj\Debug\H.Utility.csproj.CoreCompileInputs.cache
+D:\WebApi\H.Ulitity\obj\Debug\H.Utility.csproj.CopyComplete
+D:\WebApi\H.Ulitity\obj\Debug\H.Ulitity.dll
+D:\WebApi\H.Ulitity\obj\Debug\H.Ulitity.pdb

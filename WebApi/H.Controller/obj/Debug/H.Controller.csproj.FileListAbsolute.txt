@@ -1,0 +1,15 @@
+D:\WebApi\H.Controller\bin\Debug\H.Controller.dll
+D:\WebApi\H.Controller\bin\Debug\H.Controller.pdb
+D:\WebApi\H.Controller\bin\Debug\Newtonsoft.Json.dll
+D:\WebApi\H.Controller\bin\Debug\System.Net.Http.Formatting.dll
+D:\WebApi\H.Controller\bin\Debug\System.Web.Http.dll
+D:\WebApi\H.Controller\bin\Debug\System.Web.Http.WebHost.dll
+D:\WebApi\H.Controller\bin\Debug\Newtonsoft.Json.xml
+D:\WebApi\H.Controller\bin\Debug\System.Net.Http.Formatting.xml
+D:\WebApi\H.Controller\bin\Debug\System.Web.Http.xml
+D:\WebApi\H.Controller\bin\Debug\System.Web.Http.WebHost.xml
+D:\WebApi\H.Controller\obj\Debug\H.Controller.csprojAssemblyReference.cache
+D:\WebApi\H.Controller\obj\Debug\H.Controller.csproj.CoreCompileInputs.cache
+D:\WebApi\H.Controller\obj\Debug\H.Controller.csproj.CopyComplete
+D:\WebApi\H.Controller\obj\Debug\H.Controller.dll
+D:\WebApi\H.Controller\obj\Debug\H.Controller.pdb

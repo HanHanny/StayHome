@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ql_banhangModelStoreContainer" CdmEntityContainer="ql_banhangEntities">
+    <EntitySetMapping Name="chitietdathang">
+      <EntityTypeMapping TypeName="ql_banhangModel.chitietdathang">
+        <MappingFragment StoreEntitySet="chitietdathang">
+          <ScalarProperty Name="idhoadon" ColumnName="idhoadon" />
+          <ScalarProperty Name="idhang" ColumnName="idhang" />
+          <ScalarProperty Name="giaban" ColumnName="giaban" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="mucgiamgia" ColumnName="mucgiamgia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dondathang">
+      <EntityTypeMapping TypeName="ql_banhangModel.dondathang">
+        <MappingFragment StoreEntitySet="dondathang">
+          <ScalarProperty Name="idhoadon" ColumnName="idhoadon" />
+          <ScalarProperty Name="makhachhang" ColumnName="makhachhang" />
+          <ScalarProperty Name="manhanvien" ColumnName="manhanvien" />
+          <ScalarProperty Name="ngaydathang" ColumnName="ngaydathang" />
+          <ScalarProperty Name="ngaygiaohang" ColumnName="ngaygiaohang" />
+          <ScalarProperty Name="ngaychuyenhang" ColumnName="ngaychuyenhang" />
+          <ScalarProperty Name="noigiaohang" ColumnName="noigiaohang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khachhang">
+      <EntityTypeMapping TypeName="ql_banhangModel.khachhang">
+        <MappingFragment StoreEntitySet="khachhang">
+          <ScalarProperty Name="idkhachhang" ColumnName="idkhachhang" />
+          <ScalarProperty Name="tencongty" ColumnName="tencongty" />
+          <ScalarProperty Name="tengiaodich" ColumnName="tengiaodich" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="loaihang">
+      <EntityTypeMapping TypeName="ql_banhangModel.loaihang">
+        <MappingFragment StoreEntitySet="loaihang">
+          <ScalarProperty Name="idloaihang" ColumnName="idloaihang" />
+          <ScalarProperty Name="tenloaihang" ColumnName="tenloaihang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mathang">
+      <EntityTypeMapping TypeName="ql_banhangModel.mathang">
+        <MappingFragment StoreEntitySet="mathang">
+          <ScalarProperty Name="idhang" ColumnName="idhang" />
+          <ScalarProperty Name="tenhang" ColumnName="tenhang" />
+          <ScalarProperty Name="macongty" ColumnName="macongty" />
+          <ScalarProperty Name="maloaihang" ColumnName="maloaihang" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="donvitinh" ColumnName="donvitinh" />
+          <ScalarProperty Name="giahang" ColumnName="giahang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhacungcap">
+      <EntityTypeMapping TypeName="ql_banhangModel.nhacungcap">
+        <MappingFragment StoreEntitySet="nhacungcap">
+          <ScalarProperty Name="idcongty" ColumnName="idcongty" />
+          <ScalarProperty Name="tencongty" ColumnName="tencongty" />
+          <ScalarProperty Name="tengiaodich" ColumnName="tengiaodich" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanvien">
+      <EntityTypeMapping TypeName="ql_banhangModel.nhanvien">
+        <MappingFragment StoreEntitySet="nhanvien">
+          <ScalarProperty Name="idnhanvien" ColumnName="idnhanvien" />
+          <ScalarProperty Name="ho" ColumnName="ho" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="ngaylamviec" ColumnName="ngaylamviec" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+          <ScalarProperty Name="luongcoban" ColumnName="luongcoban" />
+          <ScalarProperty Name="phucap" ColumnName="phucap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
